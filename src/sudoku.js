@@ -211,23 +211,7 @@ export default function sudoku(puzzle) {
 		});
 		return f;
 	};
-	sudoku = [
-		[0, 0, 0, 0, 0, 0, 2, 0, 0],
-		[0, 8, 0, 0, 0, 7, 0, 9, 0],
-		[6, 0, 2, 0, 0, 0, 5, 0, 0],
-		[0, 7, 0, 0, 6, 0, 0, 0, 0],
-		[0, 0, 0, 9, 0, 1, 0, 0, 0],
-		[0, 0, 0, 0, 2, 0, 0, 4, 0],
-		[0, 0, 5, 0, 0, 0, 6, 0, 3],
-		[0, 9, 0, 4, 0, 0, 0, 7, 0],
-		[0, 0, 6, 0, 0, 0, 0, 0, 0],
-	];
-	sudoku = sudoku.map((val) => {
-		return val.map((val) => {
-			if (val == 0) val = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-			return val;
-		});
-	});
+
 	let count = 0;
 
 	while (checkArr(sudoku) && count < 20) {

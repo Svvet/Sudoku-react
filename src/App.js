@@ -6,4 +6,4 @@ const App = () => {
 	return <Board />;
 };
 
-ReactDOM.render(App(), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
